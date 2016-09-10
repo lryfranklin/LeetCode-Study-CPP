@@ -1,0 +1,2 @@
+Standard Two Pointers Manipulation
+ATTENTION: <string>.at(<index>), char at <index> in <string>
