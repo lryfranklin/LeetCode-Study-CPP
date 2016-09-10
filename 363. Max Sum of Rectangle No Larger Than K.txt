@@ -1,0 +1,8 @@
+Dynamic Programming + Binary Search
+When doing summation, conflate 2-D matrix to 1-D array by adding accumulately.
+For the surrent sum, we only need to find a minimum x which makes sum - k <= x, then we can guarantee sum - x <= k.
+If rows outnumbers columns, enumerate columns instead of rows
+Time Complexity: O(min(row,col)^2 * max(row,col)*log(max(row,col)))
+ATTENTION:
+1. Set in C++
+2. <set>.lower_bound(<number>) returns the first iterator which is not considered to go before <number>, or end() if none 
