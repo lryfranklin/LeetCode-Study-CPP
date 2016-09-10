@@ -1,0 +1,4 @@
+a XOR b to get the result of each bit taking the remainder of 2 for a + b
+(a & b) << 1 to get the carry bits
+Repeat above steps until carry is 0
+ATTENTION: a XOR b = a ^ b
