@@ -1,0 +1,4 @@
+Depth-First Search
+The last node in postorder traversal is always the root of the tree and node with the same value in inorder traversal breaks it into left and right parts.
+According to lengths of left and right parts in inorder traversal, breaks the rest of postorder traversal nodes into left and right parts.
+Repeat the above process for each left and right part.
