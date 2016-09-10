@@ -1,0 +1,3 @@
+Sort and delete duplicate elements in two arrays, then use one pointer for each to compare.
+Time Compleaxity: O(n)
+ATTENTION: <vector>.erase(unique(<vector>.begin(), <vector>.end()), <vector>.end()) deletes/erases duplicate elements in a vector
