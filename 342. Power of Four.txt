@@ -1,0 +1,11 @@
+Solution 1:
+Divide n by 4 recursively and see if the very last remainder is 1
+
+Solution 2 (without recursion):
+If log10(n) / log10(4) returns an integer (more precisely, a double but has 0 after decimal point), then n is a power of 4
+
+Solution 3:
+Based on features of numbers that are power of two, powers of four only have 1 in 1st, 3rd, 5th, 7th... bit, then if reslt of AND operation between the number and 0x55555555 (1010101010101010101010101010101) is still the number itself, the number is a power of four
+
+Solution 4:
+Based on features of numbers that are power of two, if the number can be divided by 3 after deducting 1, then the number is a power of four
