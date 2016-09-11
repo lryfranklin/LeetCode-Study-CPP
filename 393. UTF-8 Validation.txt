@@ -1,0 +1,12 @@
+Solution 1:
+If the first bit is 0 (less than 0b10000000/128), then it must be right
+If the first bit is 1, count the 1s after it to know the total number of bytes, by comparing if the number is larger than 128, 64, 32, 16..., use the total number of bytes to see if there's enough 10s in the following bytes ([0b10000000, 0b10111111]). One thing to be noticed is that 0b10000000 is NOT a legal expression, return false immediately when met.
+
+Solution 2:
+If the first bit is 1, 
+Shift right for 5 bits, if 0b110 is obtained, then 1 byte is followed;
+Shift right for 4 bits, if 0b1110 is obtained, then 2 bytes are followed;
+Shift right for 3 bits, if 0b11110 is obtained, then 3 bytes are followed;
+Shift right for 7 bits, if 0b1 is obtained, then return false (0b10000000).
+Then, in the following bytes, shift right for 6bits, if 0b10 is obtained, continue; otherwise, return false 
+Return count == 0 is for situations with only one number in the input data set
