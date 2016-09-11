@@ -1,9 +1,0 @@
-Solution 1:
-Sort the array and in every subset of three numbers, compare the first and third one, return the first one if different
-Time Complexity: O(n)
-Without Using Extra Memory
-
-Solution 2: 
-Sum up each bit of each number. For each summed number bit, take its remainder of 3 and result will take place
-Time Complexity: O(1)
-Without Using Extra Memory

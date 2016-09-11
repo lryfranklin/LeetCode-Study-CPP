@@ -1,3 +1,0 @@
-Do XOR operation to all the numbers, then all duplicate numbers will be eliminated (x ^ x = 1 ^ 1 ^ 0 = 1 ^ 1 ^ 1 = 0) and the different one will be left
-Time Complexity: O(1)
-Without Using Extra Memory

@@ -1,3 +1,0 @@
-Hash table to count number of one letter appears in a string
-Time Complexity: O(n)
-ATTENTION: vector<int> <vector>(<int>, <int>) initialzes a vector with size and values

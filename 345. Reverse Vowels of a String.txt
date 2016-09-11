@@ -1,5 +1,0 @@
-Two Pointers String Manipulation
-ATTENTIONS:
-1. Vowels include both small and big letters
-2. Initialize char vector with values: vector<char> vowls{'a','e','i','o','u','A','E','I','O','U'};
-3. Find an element in vector: find(<vector>.start(), <vector>.end(), <char>)
