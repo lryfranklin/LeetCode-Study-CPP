@@ -1,0 +1,11 @@
+Solution 1:
+1 - 1
+2 - 10
+4 - 100
+8 - 1000
+16 - 10000......
+Numbers that are power of two have only one 1 in their binary expressions. Thus, determine number of 1s can help decide whether the number is a power of two.
+
+Solution 2:
+According to Solution 1, numbers that are power of two only have one 1 in their highest bit, with all other bits 0.
+If the number is deducted by 1, then all bits that are 0 will be 1 and vice versa. AND operation between the two numbers will be 0.
