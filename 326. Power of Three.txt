@@ -1,0 +1,11 @@
+Solution 1:
+As numbers that are power of three don't have such obvious feature as numbers that are power of two, so the most straight way is to divide by 3 recursively and see if the very last remainder is 1
+
+Solution 2 (without recursions):
+As input is integer, and positive integers lie in (0, 2^31), the biggest number that is power of three in this interval is 3^19 = 1162261467, just see if this number can be divided by n
+
+Solution 3 (without recursion):
+If log10(n) / log10(3) returns an integer (more precisely, a double but has 0 after decimal point), then n is a power of 3
+ATTENTION: 
+1. Cannot use log (natural log) here, because it will generate round off error for n=243. This happens because log(3) is actually slightly larger than its true value due to round off, which makes the ratio smaller.
+2. To judge if a is integer in C++, use a - int(a) == 0
