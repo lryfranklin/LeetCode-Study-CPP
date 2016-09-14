@@ -1,0 +1,2 @@
+dp[i] = max(num[i] + dp[i-2], dp[i-1]), dp[0] = num[0], dp[1] = max(num[0], num[1])
+Use the second previous dp value plus current room value, compare with the dp value of first previous one and get the larger one
