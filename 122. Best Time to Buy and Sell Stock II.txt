@@ -1,0 +1,1 @@
+Use Greedy method, as long as prices[i] - prices[i-1] > 0, buy stock at (i-1)th day and sell at ith day
