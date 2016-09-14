@@ -1,0 +1,1 @@
+When arranged in a circle, then if robbed the first house, the last one cannot be robbed. So either rob one of the first and last house or not rob any one. Exclude one at a time and calculate the maximum of each (198. House Robber), then compare the two and select the larger one
