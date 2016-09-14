@@ -1,0 +1,5 @@
+Dynamic Programming
+When scanning the array to i, update the current minimum price, which will be surely the minimum before i,
+If prices[i] < minimum, then minimum = prices[i] and shouldn't sell at the day;
+If prices[i] >= minimum, then the day might be the best day to sell. Calculate prices[i] - minimum, and compare with current maximum profit.
+Time Complexity: O(n)
