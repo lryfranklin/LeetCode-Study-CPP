@@ -1,0 +1,6 @@
+Define Count[i] to be the number of unique binary trees that can be generated for [0,i]
+When the array is empty, there's only one BST, null, Count[0] = 1
+When the array has one element, there's only one BST, {1}, Count[1] = 1
+When the array has two elements, there are two BSTs, 1\2 and 2\1, Count[2] = Count[0]*Count[1] + Count[1]*Count[0]
+...
+Transformation function: Count[i] = SUM(Count[0...k]*Count[k+1...i]), 0 <= k < i-1     ---->    1-D Dynamic Programming
