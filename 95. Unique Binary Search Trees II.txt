@@ -1,0 +1,4 @@
+For root node i,
+left sub tree consists of [min, i-1] with L different structures;
+right sub tree consists of [i+1, max] with R different structures;
+for each different combination of left and right sub tree structure, let i be the root node to form a new tree
