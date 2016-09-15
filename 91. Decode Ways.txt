@@ -1,0 +1,4 @@
+Dynamic Programming
+Transformation function: dp[i] = dp[i-1] if dp[i-1] is a valid char
+				 dp[i-1] + dp[i-2] if "dp[i-1]dp[i-2]" is still a valid char
+ATTENTION: <string>.substr(<index>, <length>) returns a sub string of <string> with start char = <string>[<index>] and length = <length>
