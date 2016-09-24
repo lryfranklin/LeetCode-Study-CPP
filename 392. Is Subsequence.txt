@@ -1,0 +1,3 @@
+Two pointers i and j pointing to s and t, respectively
+if corresponding characters equal, then both i and j increases 1, otherwise only j increases 1
+At last, if i = length of s, then return true, otherwise return false
