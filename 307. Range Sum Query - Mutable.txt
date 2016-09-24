@@ -1,0 +1,27 @@
+Extension of 303. Range Sum Query - Immutable
+ATTENTION: Binary Indexed Tree - search&modify time complexity O(logn)
+Odd positions remain the same with original array, even positions are sum of several numbers from original array
+C1 = A1
+C2 = A1 + A2
+C3 = A3
+C4 = A1 + A2 + A3 + A4
+C5 = A5
+C6 = A5 + A6
+C7 = A7
+C8 = A1 + A2 + A3 + A4 + A5 + A6 + A7 + A8
+To know how many numbers consist of the number of a certain position in BIT, refer to the low bit
+low bit - combination of very right 1 and following zeroes in binary number
+examples shown as below:
+index       binary      low bit
+1            0001          1
+2            0010          2
+3            0011          1
+4            0100          4
+5            0101          1
+6            0110          2
+7            0111          1
+8            1000          8
+calculate method: x & (x ^ (x - 1)) or x & -x
+When updating number in a position, update following numbers that contain this number according to low bit
+Usually only even positions need updates
+When calculating sum, simply utilize feature of BIT
