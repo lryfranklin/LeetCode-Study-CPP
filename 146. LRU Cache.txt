@@ -1,0 +1,15 @@
+Need 3 private variables:
+(i). int cap - record the capacity of Cache
+(ii). list<pair<int, int> > lis - list that saves the content of Cache
+(iii). unordered_map<int, list<pair<int, int> >::iterator> map - hash table that saves the mapping between key and Cache, so that
+searching target only costs O(1) time complexity
+
+For get() function:
+(i). Search given key in map
+(ii). If exists, move this pair to the top and return value
+(iii). If not exists, return -1
+
+For put() function:
+(i). Search given key in map
+(ii). If exists, delete original pair and insert new pair on the top
+(iii). Check if Cache reaches capacity. If so, delete the last pair in list (Least Recent Used)
