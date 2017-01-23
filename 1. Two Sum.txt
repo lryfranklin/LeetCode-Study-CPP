@@ -1,0 +1,6 @@
+1. Brute Force O(n^2):
+Nested for loops
+
+2. Use Hash Table to Search O(n):
+Traverse the array to build hash map (O(n))
+then do another traverse (O(n)) to do the search (O(1)) and record indexes
