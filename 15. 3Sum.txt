@@ -1,0 +1,8 @@
+Solution 1: shorter
+Sort the array (O(n)), then traverse the sorted array (O(n))
+For each element, use value of 0 - element to be the target value 
+Search in rest of the array to find two numbers that have a sum of target
+Pay attention to skip duplicate element(s) when traversing/searching
+
+Solution 2: longer, easier
+Use the feature of set, which is cannot contain duplicate elements/tuples, to avoid generting duplicate tuples
