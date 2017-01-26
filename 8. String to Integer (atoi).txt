@@ -1,0 +1,7 @@
+Situations to consider:
+1. If the beginning of the string is space, then skip all the spaces, return 0 if all characters are space
+2. If the first character is +/-, mark true or false for sign
+(In C++, +-1 and -+1 both represent -1, but in this problem they both return 0)
+3. If the next character isn't number, return 0
+4. If the next character is number, change it to integer and save; if there is non-number character in the following, return the current result
+5. BORDER, if the "string" exceeds range of integer, use border value to replace current value
