@@ -1,0 +1,2 @@
+Similar method to 3Sum, add another for loop to achieve summing 4 numbers
+use feature of set to avoid duplicate elements
