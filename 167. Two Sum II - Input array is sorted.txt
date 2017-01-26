@@ -1,1 +1,4 @@
-Standard two pointers search
+Two pointers search, one from the start, one from the end
+sum<target, start++
+sum>target, end--
+O(n) time complexity
