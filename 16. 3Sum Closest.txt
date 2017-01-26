@@ -1,0 +1,1 @@
+Similar to No.15 3Sum, use a variable to record the gap value and update gap value and closest value
