@@ -1,0 +1,4 @@
+Use hash table to record summation of numbers from A and B,
+then traverse all combinations of C and D to find if there's
+an opposite value in the hash table.
+O(n^2) time complexity
