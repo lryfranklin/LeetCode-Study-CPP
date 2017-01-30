@@ -1,0 +1,9 @@
+Solution 1: Recursion
+5 Situations to consider:
+(i). if p is empty AND s is empty, return true; otherwise return false
+(ii). if p has length 1, if s also has length 1 AND s[0] is the same as p[0] OR p[0] is '.', return true; otherwise return false
+(iii). if the second char of p isn't '*', if s is empty, return false; otherwise check if the first char of two strings matches, and call recursive function for both strings without the first char
+(iv). if the second char of p is '*', if s isn't empty AND s[0] is the same as p[0] OR p[0] is '.', call recursive function to check s and p without the first two chars, if true then return true; otherwise delete the first char in s
+(v). return the result of recursive function that takes s and p without the first two chars as input parameters
+
+Solution 2: Dynamic Programming (to be updated)
