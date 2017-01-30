@@ -1,0 +1,14 @@
+I -> 1
+V -> 5
+X -> 10
+L -> 50
+C -> 100
+D -> 500
+M -> 1000
+Consecutive numbers equals the summation of these numbers. Exp. III = 3
+Smaller numbers are to the right of larger numbers equal to the summation of these numbers. Exp. VIII = 8
+Smaller numbers (I, X, C only) are to the left of larger numbers equal to larger numbers minus smaller numbers. Exp. IV = 4
+
+Two situations to consider:
+1. If current number is the last one OR the follwing number is smaller, add this number
+2. Otherwise minus this number
