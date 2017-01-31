@@ -1,0 +1,2 @@
+Divide and conquer approach
+Merge two lists at one time, exp.1&4, 2&5, 3&6, then merge two merged lists, till only one list is left
