@@ -1,0 +1,2 @@
+Depth-First Search Recursion
+Build a dictionary to save each number's string, then have a variable to record current generated string's number of chars
