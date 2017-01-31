@@ -1,0 +1,8 @@
+Basic linked list manipulation problem
+
+Solution 1: Iteration
+Create a dummy node before head node (key)
+Had better draw a graph when linking nodes together
+
+Solution 2: Recursion
+Use backtracking method, traverse to the end of the linked list, start to swap from the last two nodes, then move forward to previous nodes
