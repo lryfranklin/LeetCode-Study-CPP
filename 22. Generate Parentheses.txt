@@ -1,0 +1,6 @@
+Depth-First Search Recursion
+Use variable left and right to represent number of remain left and right parentheses 
+Three situations to consider:
+(i). if left > right, meaning that current right parentheses generated are more than left parentheses, which is illegal, return
+(ii). if left and right are both 0, then all parentheses are generated correctly, save the string
+(iii). otherwise, if left is larger than 0, call recursive function with left-1; if right is larger than 0, call recursive function with right-1
