@@ -1,0 +1,5 @@
+Depth-First Search Recursion
+Use variable combination to record current combination
+Use variable sum to record summation of current combination
+Use variable position to record current subscript
+Use feature of set to avoid duplicates
