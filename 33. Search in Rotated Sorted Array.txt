@@ -1,0 +1,22 @@
+Binary Search Method
+Difficulty: don't know where is the array rotated
+Key: Search left half or right half after obtaining the middle number
+
+0  1  2  4  5  6  7
+
+7  0  1  2  4  5  6
+
+6  7  0  1  2  4  5
+
+5  6  7  0  1  2  4
+
+4  5  6  7  0  1  2
+
+2  4  5  6  7  0  1
+
+1  2  4  5  6  7  0
+
+From the above, we obtain the following:
+(i). if the middle number is smaller than the very right one, then right half is sorted
+(ii). if the middle number is larger than the very right one, then left half is sorted
+then check if target is in the sorted half to confirm which half to search in the next step
