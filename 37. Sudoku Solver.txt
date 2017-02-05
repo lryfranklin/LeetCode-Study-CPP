@@ -1,0 +1,8 @@
+Depth-First Search Recursion
+For each cell that needs a number, fill in one of 1 to 9 each time and enter next recursion
+Each time when a number is entered, check the validation of current number
+Reset the number to '.' when recursion ends
+
+Attention:
+To check the validation of a 3*3 cell - for (int row = i / 3 * 3; row < i / 3 * 3 + 3; ++row)
+					for (int col = j / 3 * 3; col < j / 3 * 3 + 3; ++col)
