@@ -1,0 +1,5 @@
+Three matrices to record if a number appeared in row, column or 3*3 cell
+Need to check:
+(i). row: row[i][c]
+(ii). column: col[c][j]
+(iii). cell: cell[3*(i / 3)+j/3][c]
