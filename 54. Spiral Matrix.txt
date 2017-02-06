@@ -1,0 +1,15 @@
+Print side by side
+Number of spirals a matrix have: (min(row, col) - 1) / 2, note that the last spiral can be either a single row or a single column
+Knowing the number of spirals, print each spiral side by side
+Example:
+1 2 3
+4 5 6
+7 8 9
+Order of generating: 1,2,3 -> 6,9 -> 8,7 -> 4 -> 5
+Define row and col to be current height and width of the spiral, when either row or col equals to 1, break
+Range and position for each spiral in the ith round:
+(i). upper row: (i, i + col), position: [i][j]
+(ii). right column: (i + 1, i + row), position: [k][i + col - 1]
+Check whether row or col equals to 1
+(iii). lower row: (i + col - 2, i], position: [row + i - 1][j]
+(iv). left column: (i + row - 2, i), position: [k][i]
