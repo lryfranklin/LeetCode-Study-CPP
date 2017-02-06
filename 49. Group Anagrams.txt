@@ -1,0 +1,3 @@
+Use hash table unordered_map<string, vector<int>> to save each unique combination of strings and it's positions
+Sort each string before inserting into hash table
+Formulate each string array according to each slot in the hash table
