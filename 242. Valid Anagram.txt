@@ -1,0 +1,4 @@
+Use hash table (char->int) to save the frequency for each letter
+For each letter in s, increase its frequency in hash table for 1
+For each letter in t, decrease its frequence in hash table for 1
+After traverse, check whether there's any non-zeros in hash table to return true or false
