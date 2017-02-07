@@ -3,29 +3,30 @@ public:
     LRUCache(int capacity) {
         cap = capacity;
     }
-
+    
     int get(int key) {
-        auto it = map.find(key);
-        if (it == map.end()) return -1;
-        lis.splice(lis.begin(), lis, it->second);
+        auto it = m.find(key);
+        if (it == m.end()) return -1;
+        l.splice(l.begin(), l, it->second);
         return it->second->second;
     }
-
+    
     void put(int key, int value) {
-        auto it = map.find(key);
-        if (it != map.end()) lis.erase(it->second);
-        lis.push_front(make_pair(key, value));
-        map[key] = lis.begin();
-        if (map.size() > cap){
-            int k = lis.rbegin()->first;
-            lis.pop_back();
-            map.erase(k);
+        auto it = m.find(key);
+        if (it != m.end()) l.erase(it->second);
+        l.push_front(make_pair(key, value));
+        m[key] = l.begin();
+        if (m.size() > cap){
+            int k = l.rbegin()->first;
+            l.pop_back();
+            m.erase(k);
         }
     }
+    
 private:
     int cap;
-    list<pair<int, int> > lis;
-    unordered_map<int, list<pair<int, int> >::iterator> map;
+    list<pair<int, int>> l;
+    unordered_map<int, list<pair<int, int> >::iterator> m;
 };
 
 /**
