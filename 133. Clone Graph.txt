@@ -1,0 +1,3 @@
+Depth-First Search
+Difficulty: process neighbors for each node
+Fortunately, all node labels are unique, so that using hash table to map node label and new nodes
