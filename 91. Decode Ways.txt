@@ -1,4 +1,5 @@
 Dynamic Programming
-Transformation function: dp[i] = dp[i-1] if dp[i-1] is a valid char
-				 dp[i-1] + dp[i-2] if "dp[i-1]dp[i-2]" is still a valid char
-ATTENTION: <string>.substr(<index>, <length>) returns a sub string of <string> with start char = <string>[<index>] and length = <length>
+One-dimension array (string size + 1), first unit equals to 1
+For each bit, check if it's '0'. If so, assign this bit of dp to 0; if not, assign previous dp value
+Then check the previous bit, if exists, non-zero and smaller than 26 when combined with current bit, add the one before previous dp value to current dp
+(Similar to Fibonacci)
