@@ -1,0 +1,2 @@
+Two pointers traverse
+Method to ignore upper or lower case: (s[left] + 32 - 'a') % 32 != (s[right] + 32 - 'a') % 32
