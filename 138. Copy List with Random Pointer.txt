@@ -1,0 +1,6 @@
+Three steps to copy:
+(i). insert duplicate pointers
+(ii). copy random pointers 
+	if (cur->random != NULL)
+(iii). decouple two links
+	if (temp->next != NULL)
