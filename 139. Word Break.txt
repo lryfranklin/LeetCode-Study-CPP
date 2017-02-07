@@ -1,0 +1,24 @@
+Dynamic Programming
+dp array has size s.size()+1, first element true (meaning empty string and dictionary)
+According to the example in the problem:
+
+l 
+
+le e 
+
+lee ee e 
+
+leet 
+
+leetc eetc etc tc c 
+
+leetco eetco etco tco co o 
+
+leetcod eetcod etcod tcod cod od d 
+
+leetcode eetcode etcode tcode code 
+
+T F F F T F F F T 
+
+Search line by line, in each line search char by char
+Each time a new substring is generated, search it in the dictionary, if exists, skip the line and search next line
