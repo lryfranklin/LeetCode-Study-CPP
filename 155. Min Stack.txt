@@ -1,0 +1,2 @@
+Comparing to regular stack in C++, min stack has one more function, getMin
+Use two stacks, one saves elements pushed in order, the other saves the minimum appeared
