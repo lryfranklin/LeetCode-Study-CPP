@@ -1,0 +1,7 @@
+Depth-First Search Recursion
+Attention: 
+minimum depth needs to discuss null left/right node
+(i). both null, return 1
+(ii). left node is null (discuss first), return 1+recursive(right)
+(iii). right node is null, return 1+recursive(left)
+(iv). both not null, return 1+min(left, right)
