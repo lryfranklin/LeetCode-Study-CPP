@@ -1,0 +1,5 @@
+Use hash table to map char in pattern to string in str, mapping should be exactly one to one
+When meeting a new char and a new word, check two aspects:
+(i). if it appears in the hash table, if so, and its mapping word doesn't match, return false
+(ii). if not appear in the hash table, traverse hash table again to check if the new word has already been mapped, if not, build the mapping between new char and new word
+ATTENTION: return i == pattern.size(), not true, example input: 'jquery','jquery'
