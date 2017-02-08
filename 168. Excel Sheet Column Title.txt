@@ -1,0 +1,3 @@
+Transform bit by bit, from low bit to high bit
+Each time move left, shrink original to 1/26, then mod 26 and minus the module
+REVERSE the string at last
