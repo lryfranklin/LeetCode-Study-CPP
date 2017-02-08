@@ -10,14 +10,13 @@
 class Solution {
 public:
     int kthSmallest(TreeNode* root, int k) {
-        return kthSmallestInorder(root, k);
+        return kthSmallestDFS(root, k);
     }
-    
-    int kthSmallestInorder(TreeNode *root, int &k){
+    int kthSmallestDFS(TreeNode *root, int &k){
         if (!root) return -1;
-        int value = kthSmallestInorder(root->left, k);
-        if (k == 0) return value;
+        int val = kthSmallestDFS(root->left, k);
+        if (k == 0) return val;
         if (--k == 0) return root->val;
-        return kthSmallestInorder(root->right, k);
+        return kthSmallestDFS(root->right, k);
     }
 };

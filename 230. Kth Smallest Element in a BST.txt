@@ -1,1 +1,2 @@
-The most important characteristic for binary search tree is that root->left < root < root->right, such, inorder traversal will return an ordered array
+Binary search tree has the feature: left < root < right
+Utilize this feature, search the kth smallest node by inorder traversal
