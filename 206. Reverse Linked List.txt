@@ -1,0 +1,8 @@
+Solution 1: iterative
+Create a dummy node before the linked list, then begin with head node, move each node to dummy->next
+Repeat until head becomes the last node
+
+Solution 2: recursive
+Dive into recursive function until head points to the last node and p points to the previous one
+then change p and head's positions, and return to the last layer of recursion
+After each switch, nodes after head are already ordered, until p becomes the first node
