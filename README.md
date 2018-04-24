@@ -1,4 +1,4 @@
-# LeetCode-Study
+# LeetCode-Study-CPP
 Firsthand answers of problems in LeetCode, written in *C++*
 
 Each problem has *two* files:
